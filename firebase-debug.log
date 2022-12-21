@@ -1,0 +1,75 @@
+[debug] [2022-12-20T23:43:50.162Z] ----------------------------------------------------------------------
+[debug] [2022-12-20T23:43:50.163Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Usuario\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-12-20T23:43:50.164Z] CLI Version:   11.19.0
+[debug] [2022-12-20T23:43:50.164Z] Platform:      win32
+[debug] [2022-12-20T23:43:50.164Z] Node Version:  v18.12.1
+[debug] [2022-12-20T23:43:50.165Z] Time:          Tue Dec 20 2022 20:43:50 GMT-0300 (hora estándar de Argentina)
+[debug] [2022-12-20T23:43:50.165Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-20T23:43:50.218Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-20T23:43:50.219Z] > authorizing via signed-in user (contacto@flaxvein.com)
+[debug] [2022-12-20T23:43:50.219Z] [iam] checking project prueba-nextjs-b7244 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-12-20T23:43:50.220Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/prueba-nextjs-b7244:testIamPermissions [none]
+[debug] [2022-12-20T23:43:50.221Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/prueba-nextjs-b7244:testIamPermissions x-goog-quota-user=projects/prueba-nextjs-b7244
+[debug] [2022-12-20T23:43:50.221Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/prueba-nextjs-b7244:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-12-20T23:43:51.107Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/prueba-nextjs-b7244:testIamPermissions 200
+[debug] [2022-12-20T23:43:51.107Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/prueba-nextjs-b7244:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-12-20T23:43:51.108Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/prueba-nextjs-b7244 [none]
+[debug] [2022-12-20T23:43:51.507Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/prueba-nextjs-b7244 200
+[debug] [2022-12-20T23:43:51.507Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/prueba-nextjs-b7244 {"projectId":"prueba-nextjs-b7244","projectNumber":"370854690658","displayName":"prueba-nextjs","name":"projects/prueba-nextjs-b7244","resources":{"hostingSite":"prueba-nextjs-b7244"},"state":"ACTIVE","etag":"1_6e2d3d29-c0ec-45a4-8cae-d3501f3d76e5"}
+[debug] [2022-12-20T23:44:05.613Z] TypeError: Cannot read properties of null (reading 'toString')
+    at ɵcodegenFunctionsDirectory (C:\Users\Usuario\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\next\index.js:220:18)
+    at async prepareFrameworks (C:\Users\Usuario\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:305:84)
+    at async deploy (C:\Users\Usuario\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-12-20T23:45:11.759Z] ----------------------------------------------------------------------
+[debug] [2022-12-20T23:45:11.761Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Usuario\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --debug
+[debug] [2022-12-20T23:45:11.761Z] CLI Version:   11.19.0
+[debug] [2022-12-20T23:45:11.761Z] Platform:      win32
+[debug] [2022-12-20T23:45:11.761Z] Node Version:  v18.12.1
+[debug] [2022-12-20T23:45:11.762Z] Time:          Tue Dec 20 2022 20:45:11 GMT-0300 (hora estándar de Argentina)
+[debug] [2022-12-20T23:45:11.762Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-20T23:45:11.826Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-20T23:45:11.827Z] > authorizing via signed-in user (contacto@flaxvein.com)
+[debug] [2022-12-20T23:45:11.828Z] [iam] checking project prueba-nextjs-b7244 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-12-20T23:45:11.831Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/prueba-nextjs-b7244:testIamPermissions [none]
+[debug] [2022-12-20T23:45:11.831Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/prueba-nextjs-b7244:testIamPermissions x-goog-quota-user=projects/prueba-nextjs-b7244
+[debug] [2022-12-20T23:45:11.831Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/prueba-nextjs-b7244:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-12-20T23:45:12.728Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/prueba-nextjs-b7244:testIamPermissions 200
+[debug] [2022-12-20T23:45:12.728Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/prueba-nextjs-b7244:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-12-20T23:45:12.731Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/prueba-nextjs-b7244 [none]
+[debug] [2022-12-20T23:45:13.174Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/prueba-nextjs-b7244 200
+[debug] [2022-12-20T23:45:13.175Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/prueba-nextjs-b7244 {"projectId":"prueba-nextjs-b7244","projectNumber":"370854690658","displayName":"prueba-nextjs","name":"projects/prueba-nextjs-b7244","resources":{"hostingSite":"prueba-nextjs-b7244"},"state":"ACTIVE","etag":"1_6e2d3d29-c0ec-45a4-8cae-d3501f3d76e5"}
+[debug] [2022-12-20T23:45:26.329Z] TypeError: Cannot read properties of null (reading 'toString')
+    at ɵcodegenFunctionsDirectory (C:\Users\Usuario\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\next\index.js:220:18)
+    at async prepareFrameworks (C:\Users\Usuario\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:305:84)
+    at async deploy (C:\Users\Usuario\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-12-20T23:51:41.609Z] ----------------------------------------------------------------------
+[debug] [2022-12-20T23:51:41.611Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Usuario\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-12-20T23:51:41.612Z] CLI Version:   11.19.0
+[debug] [2022-12-20T23:51:41.612Z] Platform:      win32
+[debug] [2022-12-20T23:51:41.612Z] Node Version:  v19.3.0
+[debug] [2022-12-20T23:51:41.612Z] Time:          Tue Dec 20 2022 20:51:41 GMT-0300 (hora estándar de Argentina)
+[debug] [2022-12-20T23:51:41.612Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-20T23:51:41.672Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-20T23:51:41.673Z] > authorizing via signed-in user (contacto@flaxvein.com)
+[debug] [2022-12-20T23:51:41.673Z] [iam] checking project prueba-nextjs-b7244 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-12-20T23:51:41.675Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/prueba-nextjs-b7244:testIamPermissions [none]
+[debug] [2022-12-20T23:51:41.675Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/prueba-nextjs-b7244:testIamPermissions x-goog-quota-user=projects/prueba-nextjs-b7244
+[debug] [2022-12-20T23:51:41.675Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/prueba-nextjs-b7244:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-12-20T23:51:42.580Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/prueba-nextjs-b7244:testIamPermissions 200
+[debug] [2022-12-20T23:51:42.580Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/prueba-nextjs-b7244:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-12-20T23:51:42.581Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/prueba-nextjs-b7244 [none]
+[debug] [2022-12-20T23:51:43.036Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/prueba-nextjs-b7244 200
+[debug] [2022-12-20T23:51:43.036Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/prueba-nextjs-b7244 {"projectId":"prueba-nextjs-b7244","projectNumber":"370854690658","displayName":"prueba-nextjs","name":"projects/prueba-nextjs-b7244","resources":{"hostingSite":"prueba-nextjs-b7244"},"state":"ACTIVE","etag":"1_6e2d3d29-c0ec-45a4-8cae-d3501f3d76e5"}
+[debug] [2022-12-20T23:51:57.434Z] TypeError: Cannot read properties of null (reading 'toString')
+    at ɵcodegenFunctionsDirectory (C:\Users\Usuario\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\next\index.js:220:18)
+    at async prepareFrameworks (C:\Users\Usuario\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:305:84)
+    at async deploy (C:\Users\Usuario\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.
